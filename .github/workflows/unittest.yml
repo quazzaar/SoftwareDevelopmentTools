@@ -24,6 +24,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s tests -p "rectangle.py"
-        python -m unittest discover -s tests -p "circle.py"
-        python -m unittest discover -s tests -p "square.py"
+        python -m unittest discover
