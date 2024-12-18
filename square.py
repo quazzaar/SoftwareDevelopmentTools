@@ -36,3 +36,8 @@ def perimeter(a):
     return 4 * a
 
 
+print("Ручное тестирование для квадрата")
+print("Посчитал, что при a = 5 => S = 25")
+print(area(5))
+print("Посчитал, что при a = 5 => P = 20")
+print(perimeter(5))

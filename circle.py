@@ -37,3 +37,10 @@ def perimeter(r):
     if r < 0:
         raise ValueError("Радиус должен быть неотрицательным")
     return 2 * math.pi * r
+
+
+print("Ручное тестирование для круга")
+print("Посчитал, что при r = 5 => S = 78.53982")
+print(area(5))
+print("Посчитал, что при r = 5 => S = 31.41593 ")
+print(perimeter(5))

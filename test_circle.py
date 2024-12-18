@@ -2,13 +2,6 @@ import unittest
 from circle import area, perimeter
 
 
-print("Ручное тестирование для круга")
-print("Посчитал, что при r = 5 => S ~78.53982")
-print(area(5))
-print("Посчитал, что при r = 5 => S ~31.41593 ")
-print(perimeter(5))
-
-
 class TestCircle(unittest.TestCase):
     def test_area(self):
         self.assertAlmostEqual(area(5), 78.53981633974483) # стандартный случай

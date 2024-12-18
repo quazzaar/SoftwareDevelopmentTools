@@ -2,13 +2,6 @@ import unittest
 from rectangle import area, perimeter
 
 
-print("Ручное тестирование для прямоугольника")
-print("Посчитал, что при a = 4, b = 5 => S = 20")
-print(area(4, 5))
-print("Посчитал, что при a = 4, b = 5 => P = 18")
-print(perimeter(4, 5))
-
-
 class TestRectangle(unittest.TestCase):
     def test_area(self):
         self.assertEqual(area(4, 5), 20)  # Стандартный случай
