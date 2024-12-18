@@ -13,7 +13,7 @@ def area(a):
             25
     '''
     if a < 0:
-        raise ValueError("Длина стороны должна быть неотрицательной")
+        raise ValueError("Side length must be non-negative")
     return a * a
 
 
@@ -32,12 +32,12 @@ def perimeter(a):
             20
     '''
     if a < 0:
-        raise ValueError("Длина стороны должна быть неотрицательной")
+        raise ValueError("Side length must be non-negative")
     return 4 * a
 
 
-print("Ручное тестирование для квадрата")
-print("Посчитал, что при a = 5 => S = 25")
+print("Manual testing for square")
+print("Calculated that for a = 5 => Area = 25")
 print(area(5))
-print("Посчитал, что при a = 5 => P = 20")
+print("Calculated that for a = 5 => Perimeter = 20")
 print(perimeter(5))

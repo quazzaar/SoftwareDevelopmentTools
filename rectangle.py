@@ -14,7 +14,7 @@ def area(a, b):
             20
     '''
     if a < 0 or b < 0:
-        raise ValueError("Длина стороны должна быть неотрицательной")
+        raise ValueError("Side length must be non-negative")
     return a * b
 
 
@@ -34,12 +34,12 @@ def perimeter(a, b):
             18
     '''
     if a < 0 or b < 0:
-        raise ValueError("Длина стороны должна быть неотрицательной")
+        raise ValueError("Side length must be non-negative")
     return 2 * (a + b)
 
 
-print("Ручное тестирование для прямоугольника")
-print("Посчитал, что при a = 4, b = 5 => S = 20")
+print("Manual testing for rectangle")
+print("Calculated that for a = 4, b = 5 => Area = 20")
 print(area(4, 5))
-print("Посчитал, что при a = 4, b = 5 => P = 18")
+print("Calculated that for a = 4, b = 5 => Perimeter = 18")
 print(perimeter(4, 5))

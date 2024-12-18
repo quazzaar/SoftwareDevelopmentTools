@@ -16,7 +16,7 @@ def area(r):
             28.274333882308138
     '''
     if r < 0:
-        raise ValueError("Радиус должен быть неотрицательным")
+        raise ValueError("Radius must be non-negative")
     return math.pi * r * r
 
 
@@ -35,12 +35,12 @@ def perimeter(r):
             18.84955592153876
     '''
     if r < 0:
-        raise ValueError("Радиус должен быть неотрицательным")
+        raise ValueError("Radius must be non-negative")
     return 2 * math.pi * r
 
 
-print("Ручное тестирование для круга")
-print("Посчитал, что при r = 5 => S = 78.53982")
+print("Manual testing for circle")
+print("Calculated that for r = 5 => Area = 78.53982")
 print(area(5))
-print("Посчитал, что при r = 5 => S = 31.41593 ")
+print("Calculated that for r = 5 => Perimeter = 31.41593")
 print(perimeter(5))
