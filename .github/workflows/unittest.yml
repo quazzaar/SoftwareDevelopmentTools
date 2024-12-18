@@ -1,0 +1,29 @@
+name: Run unittest
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12.6'
+
+    - name: Run tests
+      run: |
+        python -m unittest discover -s tests -p "rectangle.py"
+        python -m unittest discover -s tests -p "circle.py"
+        python -m unittest discover -s tests -p "square.py"
